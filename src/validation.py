@@ -121,9 +121,6 @@ def validate_nom(nom: str) -> Tuple[bool, str]:
     if not nom:
         return False, "Le nom est obligatoire"
 
-    if len(nom) < 1:
-        return False, "Le nom ne peut pas être vide"
-
     if len(nom) > 100:
         return False, "Le nom ne peut pas dépasser 100 caractères"
 
@@ -142,9 +139,6 @@ def validate_prenom(prenom: str) -> Tuple[bool, str]:
     """
     if not prenom:
         return False, "Le prénom est obligatoire"
-
-    if len(prenom) < 1:
-        return False, "Le prénom ne peut pas être vide"
 
     if len(prenom) > 100:
         return False, "Le prénom ne peut pas dépasser 100 caractères"
